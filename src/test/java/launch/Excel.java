@@ -17,6 +17,9 @@ import io.github.bonigarcia.wdm.managers.ChromiumDriverManager;
 	
 	public class Excel {
 		
+		public void puthusu2() {
+System.out.println("I'm new branch");
+		}
 		public void empid() {
 			System.out.println("1st branch");
 		}
