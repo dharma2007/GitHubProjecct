@@ -12,10 +12,18 @@ import org.apache.poi.ss.usermodel.Row;
 	import org.apache.poi.ss.usermodel.Sheet;
 	import org.apache.poi.ss.usermodel.Workbook;
 	import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+import io.github.bonigarcia.wdm.managers.ChromiumDriverManager;
 	
 	public class Excel {
 		
+		public void empid() {
+			System.out.println("1st branch");
+		}
+		
 	 public static void main(String[] args) throws IOException {
+		 
+		 
 		 
 		 File f = new File("C:\\\\Users\\\\ThSdjkr\\\\Desktop\\\\working Software\\\\Data.xlsx");
 		 
@@ -42,16 +50,16 @@ import org.apache.poi.ss.usermodel.Row;
 					}
 					if (type==0) {
 						
-//					if (DateUtil.isCellDateFormatted(c)) {
-//						Date date = c.getDateCellValue();
-//						SimpleDateFormat fr = new SimpleDateFormat("dd-MMM-yyyy");
-//						
-//						String format = fr.format(date);
-//						
-//						System.out.println(format);
+					if (DateUtil.isCellDateFormatted(c)) {
+						Date date = c.getDateCellValue();
+						SimpleDateFormat fr = new SimpleDateFormat("dd-MMM-yyyy");
+						
+						String format = fr.format(date);
+						
+						System.out.println(format);
 						
 					}
-					
+						
 					else {
 						double d = c.getNumericCellValue();
 						
@@ -61,11 +69,10 @@ import org.apache.poi.ss.usermodel.Row;
 						
 						System.out.println(n);
 					}
-					
-						
 					}
 					 
 			}
 	}
+
 	 }
 	}
